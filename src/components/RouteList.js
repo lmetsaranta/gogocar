@@ -14,7 +14,11 @@ function RouteList(props) {
     const allRoutes = () => {
        return routeData.map(route => {
            return (
-           <Route key={route.gtfsId} longName={route.longName} stops={route.stops} getRoute={props.getRoute}>
+           <Route
+             key={route.gtfsId}
+             longName={route.longName}
+             stops={route.stops}
+             getRoute={props.getRoute}>
            </Route>
            )
        })
